@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Refresh document every 30 seconds:-->
+    <!-- HTML Attribute    -> name="value" pairs -->
+    <!-- CSS declaration   -> property:value pairs -->
+    <!-- CSS selector      -> an identifier of an HTML element or group of HTML elements to be styled -->
+    <!-- Border shorthand is for border-width, border-style and border-color -->
+    <!-- Shorthands for margin and padding go clockwise -> top, right, bottom, left (margin: 25px 50px 75px 100px) -->
+
+    <!--Refresh document every 3 seconds:-->
+    <meta http-equiv="refresh" content="3">
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        th:nth-child(even),td:nth-child(even) {
+          background-color: #D6EEEE;
+        }
+
+        tr:nth-child(odd):hover{
+          background-color:red;
+        }
+
+        th{
+          text-align:center;
+          text-decoration:none;
+        }
+
+        caption{
+            font-style:normal;
+            font-size:42px;
+            font-weight:900;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table
+    rows:</p>
+
+<br><br>
+
+<table style="width:100%">
+    <caption>Stripped Table Example</caption>
+    <!--  Note: The css above line distinguishes the odd row for thead and odd rows for tbody -->
+    <thead>
+        <tr>
+            <th></th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>08:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>09:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>11:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+

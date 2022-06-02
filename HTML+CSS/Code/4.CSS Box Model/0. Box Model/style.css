@@ -1,0 +1,51 @@
+/* https://medium.com/@DaphneWatson/css-display-properties-block-inline-and-inline-block-how-to-tell-the-difference-7d3a1e6e3051#:~:text=A%20block%20element%20always%20starts,%3E%20and%20tags. */
+
+/*
+1. Block elements: 
+• A block element always starts on a new line.
+• A block element fills up the horizontal space left and right on the web page (i.e. takes up the full width available). 
+• You can add margins and padding on all four sides of any block element — top, right, left, and bottom. 
+*/
+p,
+div:nth-child(1) {
+  padding: 5px;
+  background: lightgreen;
+}
+
+/*
+2. Inline elements: 
+• An inline element does not start on a new line. It appears on the same line as the content and tags beside it.
+• An inline element only takes up as much width as necessary.
+• You can ONLY add space to the left and right on an inline element, 
+  but you cannot add height to the top or bottom padding or margin of an inline element.
+
+https://www.w3schools.com/html/html_blocks.asp
+*/
+span,
+strong {
+  background: white;
+}
+
+/*
+3. Inline-block elements: 
+• An inline-block element is similar to inline elements, except it can have padding and margins added on ALL FOUR. 
+• Compared to "display:block", the major difference is that "display:inline-block" does not add a line-break after the element
+• Compared to "display:inline", the major difference is that "display:inline-block" allows to set width and height 
+  on the element.
+• Compared to "display:inline", with the "display:inline-block" the top and bottom margins/paddings are respected
+
+https://www.w3schools.com/css/css_inline-block.asp
+*/
+ul {
+  background-color: #f0b27a;
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: grey;
+}

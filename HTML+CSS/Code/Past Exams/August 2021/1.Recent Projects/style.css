@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.non-bold{
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: #FFB601;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    margin-left: 214px;
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.btn{
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 692px;
+}
+
+.card{
+    width: 30%;
+    flex-direction: column;
+    
+}
+
+.resize{
+    width: 300px;
+}
+
+h3{
+    font-size: 14px;
+    max-width: 60%;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 550;
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+
+p{
+    flex-grow: 1;
+    margin-top: 0px;
+    font-size: 12px;
+    color: gray;
+    text-indent: 2px;
+    display: fill;
+    flex-grow: 1;
+    max-width: 60%;
+}

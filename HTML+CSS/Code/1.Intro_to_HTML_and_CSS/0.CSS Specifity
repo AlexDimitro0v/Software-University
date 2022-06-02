@@ -1,0 +1,29 @@
+Sources:
+https://stackoverflow.com/questions/25105736/what-is-the-order-of-precedence-for-css
+http://tutorials.jenkov.com/css/precedence.html#:~:text=Note%2C%20that%20CSS%20precedence%20happens,declared%20in%20the%20second%20rule.
+https://www.codeguage.com/courses/css/style-precedence
+
+CSS relies heavily on specifity and style overwriting.
+In decreasing order of priority (applied in this order):
+ 1. External <link>         (External CSS)
+ 2. In the <head>           (Internal CSS)
+ 3. Inline style attribute  (Inline CSS)                                                             1000p
+ 4. Using !important        (God mode)
+
+ 5. A more specific selector takes *precedence* over a less specific one (*see below)
+ 6. Rules that appear later in the code override earlier rules if both have the same specificity
+
+
+*Single Selector Priority also applies (highest to lowest):
+1. Ids                                                                                                100p
+2. Classes (ex.: .myclass), pseudo-classes (ex.: :hover) and attribute selectors (ex.: [href=^https:] 10p
+3. Elements (ex: div) and pseudo-elements (ex.: ::before)                                             1p
+
+To compare the specificity of two combined selectors, compare the number of occurrences of single selectors of each of the specificity groups above.
+Example: compare #nav ul li a:hover to #nav ul li.active a::after
+1. count the number of id selectors: there is one for each (#nav)
+2. count the number of class selectors: there is one for each (:hover and .active)
+3. count the number of element selectors: there are 3 (ul li a) for the first and 4 for the second (ul li a ::after),
+   thus the second combined selector is more specific.
+
+See the image for single selector priority.

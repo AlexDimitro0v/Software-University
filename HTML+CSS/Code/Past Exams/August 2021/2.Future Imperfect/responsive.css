@@ -1,0 +1,78 @@
+@media all and (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+    align-content: space-around;
+    width: 100%;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .stats {
+    order: 1;
+  }
+  .actions {
+    order: 2;
+    padding: 0px 30px;
+  }
+  #main > ul {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0px;
+  }
+  #main > ul > li {
+    margin-bottom: 20px;
+  }
+  div.meta {
+    padding: 0em 3em 1.75em 3em;
+  }
+}
+#main > article > a {
+  size: 10px;
+}
+#wrapper {
+  padding: 0px;
+}
+#header{
+    text-align: left;
+}
+#main{
+    margin-top: 50px;
+    vertical-align: center;
+}
+#main > ul > li > a{
+    width: 480px;
+}
+#main > article > footer > ul.actions > li > a{
+    width: 480px;
+}
+#main > article:nth-child(1) > a{
+    object-fit: cover;
+}
+.meta{
+    padding:0px;
+}
+#main > article > header > div.meta{
+    padding: 0px;
+}
+.post{
+    border: none;
+}
+#main > article> header {
+    border: none;
+}
+#main > article > header > div.title{
+    padding-bottom: 40px;
+}
+#main > article > header > div.meta{
+    margin-left: 65px;
+    border: none;
+}
+.name{
+    font-size: 0px;
+}
+#main > article > header > div.meta > a > img{
+    margin-right: 60px;
+}
+#main > article > footer > ul.actions{
+    padding-right: 0px;
+}

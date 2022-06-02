@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .header, .footer {
+        background-color: grey;
+        color: white;
+        padding: 15px;
+      }
+
+      .footer{
+        margin-bottom: 150px;
+      }
+
+      .column {
+        float: left;
+        padding: 15px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .menu {
+        width: 25%;
+      }
+
+      .content {
+        width: 75%;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li, .menu li>a {
+        background-color: #33b5e5;
+        padding: 8px;
+        margin-bottom: 8px;
+        color: #ffffff;
+      }
+
+      .menu li>a{
+        padding: 0;
+        margin: 0;
+        text-decoration:none;
+      }
+
+      .menu li:hover, .menu li>a:hover, .menu li:hover>a{
+        background-color: #0099cc;
+      }
+
+        .layout {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .layout li {
+          float: left;
+        }
+
+        .layout li a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .layout li a:hover {
+          background-color: #111;
+        }
+
+        .layout .active {
+          background-color: red;
+        }
+    </style>
+
+<!--
+    https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered
+    https://stackoverflow.com/questions/2717480/css-selector-for-first-element-with-class?rq=1
+-->
+</head>
+
+<body>
+    <div class="header">
+        <h1>Chania</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li><a href="#">The Flight</a></li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the
+                old town and the modern city.</p>
+            <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer Text</p>
+    </div>
+
+    <br>
+
+    <ul class="layout">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <br><br><br><br><br>
+
+    <!--
+        The difference between inline and block elements is that a block-level element always starts on a new line while
+        inline elements do not start on a new line and only takes up as much width as necessary.
+        https://www.w3schools.com/html/html_blocks.asp
+     -->
+    <nav>
+      <a href="/html/">HTML</a> |
+      <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+body {
+  /* https://stackoverflow.com/questions/10205464/what-is-the-difference-between-background-and-background-color#:~:text=(See%20Caption%3A%20Background%20%2D%20Shorthand%20property)&text=If%20you%20use%20a%20image%20as%20background%20in%20this%20way%3A&text=then%20you%20cannot%20override%20it,color%20and%20can%20be%20overriden.&text=There%20is%20no%20difference. */
+  background-color: rgb(206, 29, 147);
+  color: white;
+}

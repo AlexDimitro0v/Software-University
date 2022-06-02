@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--form>fieldset>(legend+(div*3>label>input))-->
+
+<body>
+    <form method="get" action="" target="_blank" autocomplete="on">
+        <fieldset>
+            <legend>Customer Details</legend>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="George" name="fname" autofocus>
+                <!-- Alternatively, you can nest the <input> directly inside the <label>, 
+                     in which case the for and id attributes are not needed because the association is implicit
+                -->
+            </div>
+
+            <br>
+
+            <div>
+                <label>Last Name
+                    <input type="text" placeholder="Devis" name="lname">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <!-- The input should have the same name (and some value -> for radio input type this is a must)-->
+                <label>Male
+                    <input type="radio" name="gender" value="male">
+                </label>
+                <label>Female
+                    <input type="radio" name='gender' value="female">
+                </label>
+                <label>Other
+                    <input type="radio" name="gender" value="other">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <span>Prefered contact method:</span>
+                <label>Email
+                    <input type="radio" name="contact" value="email">
+                </label>
+                <label>Phone
+                    <input type="radio" name="contact" value="phone">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Email
+                    <input type="email" placeholder="your@email.com" name="email">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Phone
+                    <input type="tel" placeholder="+359887346896" name="tel">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="cities">Town
+                    <!-- If the name attribute is omitted, no data from the drop-down list will be submitted !!!!! -->
+                    <select id="cities" name="cities">
+                        <option value="Varna">Varna</option>
+                        <option value="Sofia">Sofia</option>
+                        <option value="Burgas">Burgas</option>
+                    </select>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="age">Age
+                    <input type="number" id="age" min=18 max=70 name="age">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="language">Programming language
+                    <!-- The <datalist> element's id attribute must be equal to the <input> element's list attribute 
+                        (this binds them together). 
+                    -->
+                    <input list="languages" name="language" id="language">
+                    <datalist id="languages">
+                        <option value="Python">
+                        <option value="C">
+                        <option value="C#">
+                        <option value="Java">
+                        <option value="JavaScript">
+                    </datalist>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <textarea placeholder="More information..." rows="5" cols="20"  maxlength="5"
+                          title="Maximum 5 characters allowed" name="textarea">
+                </textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <!-- Sometimes the input just comes before the label  -->
+                <label for="tc">
+                    <input type="checkbox" id="tc" checked>
+                    I agree with the terms and conditions
+                </label>
+
+                <input type="checkbox" id="tc">
+                <label for="tc">I agree with the terms and conditions</label>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

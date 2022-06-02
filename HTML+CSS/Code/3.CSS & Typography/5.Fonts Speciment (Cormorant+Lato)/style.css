@@ -1,0 +1,40 @@
+/* 
+1.@import url  
+2.@font-face
+3.<link>
+*/ /* 
+https://webmasters.stackexchange.com/questions/108916/best-way-to-add-a-custom-font-to-my-site 
+https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file
+*/
+
+/* Difference between  @font-face and @import url: */ /* 
+https://stackoverflow.com/questions/56141957/difference-between-font-face-and-import-url/56142023?fbclid=IwAR1v3-dJs26l5pNHHAXL9OfbpV4d2RcaGv34jzlR-U_iu-kuATXxZnSz0K0#:~:text=%40font%2Dface%20is%20a%20css,into%20the%20current%20style%20sheet.&text=Otherwise%2C%20the%20font%20resource%20specified,function%20is%20downloaded%20and%20used 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Lato&display=swap");
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Lato, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: Cormorant, serif;
+  line-height: 1.2; /* Unitless values: use this number multiplied by the element's font size */
+  font-weight: bold;  
+}
+
+.square {
+  list-style: square;
+}
+
+.circle {
+  list-style: circle;
+}
+
+.disc {
+  list-style: disc;
+}

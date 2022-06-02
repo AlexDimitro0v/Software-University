@@ -1,0 +1,20 @@
+/* Precedence: 
+http://tutorials.jenkov.com/css/precedence.html#:~:text=The%20more%20specific%20the%20CSS,the%20higher%20is%20its%20specificity 
+*/
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Helvetica, sans-serif;
+}
+
+article {
+  background: rgb(51, 102, 153);
+  color: white;
+  border-radius: 1rem;
+  padding: 10px 30px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+}

@@ -1,0 +1,76 @@
+<!--  Forms: https://www.w3schools.com/html/html_forms.asp -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Forms</title>
+</head>
+
+<body>
+  <form action="/action_page.php" method="get" target="_self" autocomplete="on">
+    <fieldset>
+      <p><b>Note how the get request attach the input fields to the url</b></p><br>
+      <legend>Login information</legend>
+
+      <label for="usr">Username</label>
+      <p><input type="text" name="usr" id="usr" /></p>
+
+      <label for="pass">Password</label>
+      <p><input type="text" name="pass" id="pass" placeholder="Pass" /></p>
+
+      <input type="submit" value="Submit"> &nbsp;
+      <input type="button" value="Button">
+    </fieldset>
+  </form>
+
+  <br>
+  
+  <form action="/action_page2.php" method="get">
+    <fieldset>
+      <!--
+         Notice that each input field must have a name attribute to be submitted.
+         If the name attribute is omitted, the value of the input field will not be sent at all !!!!!!!!
+      -->
+      <legend>Form 2</legend>
+      <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+      <br><br>
+      <input type="file"><label for=""></label>
+      <br><br>
+      <input type="range" name="range" id="range"><label for="range">Range</label>
+      <br><br>
+      <textarea name="remarks" id="remarks" cols="30" rows="5" maxlength="5" title="Maximum 5 characters allowed"></textarea>
+      <br><br>
+      <input type="reset" id="reset"><label for="reset"> Reset Button for All Fields</label>
+      <br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <br>
+  <form action="">
+    <fieldset>
+      <legend>Choose color</legend>
+      <label for="colors">Choose a color:</label>
+      <select name="colors" id="colors">
+        <option>Red</option>
+        <option>Black</option>
+        <option>Blue</option>
+      </select>
+    </fieldset>
+  </form>
+  <br>
+
+  <h2>Input Button</h2>
+  <input id='button' type="button" onclick="myFunction()" value="Click Me!">
+
+  <script>
+    function myFunction(){
+        document.getElementById("button").value = "Good boy!"
+    }
+  </script>
+
+</body>
+
+</html>
