@@ -8,7 +8,7 @@ A console-based Python implementation of a **basic phonebook**.
   or json document)
 - Optional:
   - The app follows an OOP approach of implementation:
-    - An abstract class that is inherited from a child class
+    - An abstract class/interface that is inherited from/implemented by another class
 
 ## Basic features (=minimum requirements):
   - Storing new records (or overwriting existing records)
