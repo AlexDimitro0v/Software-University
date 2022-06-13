@@ -4,8 +4,8 @@ function solution(input) {
     let contestant3 = Number(input[2]);
 
     let totalSeconds = contestant1+contestant2+contestant3
-    let seconds = totalSeconds % 60
-    let minutes = Math.floor(totalSeconds/60)
+    let seconds = totalSeconds % 60 // get the seconds
+    let minutes = Math.floor(totalSeconds/60) // get the minutes
     if (seconds < 10) {
         console.log(`${minutes}:0${seconds}`)
     }

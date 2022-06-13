@@ -6,6 +6,7 @@ function solution(input) {
     let totalMinutesExam = examHour*60+examMinute;
     let totalMinutesArrival = arrivingHour*60+arrivingMinute;
     let diff = Math.abs(totalMinutesExam-totalMinutesArrival);
+
     let hours = Math.floor(diff/60);
     let minutes = diff%60;
 
