@@ -3,18 +3,22 @@ function solution(input) {
     let totalPrice = 0;
     let index = 1;
 
-    while (input[index]!=="Party!") {
-        let cocktail = String(input[index]);
-        index ++;
-        let cocktailNumber = Number(input[index]);
+    while (true) {
+        let cocktail = String(input[index++]);
+        if (cocktail === "Party!"){
+            break;
+        }
+        let cocktailNumber = Number(input[index++]);
 
         let cocktailPrice = cocktail.length*cocktailNumber;
         if (cocktailPrice % 2 === 1) {
-            cocktailPrice = cocktailPrice - cocktailPrice*25/100;
+            cocktailPrice = cocktailPrice - cocktailPrice*(25/100);
         }
 
         totalPrice += cocktailPrice;
-        index ++;
+        if(totalPrice>=desiredWinning){
+            break;
+        }
     }
 
     if (totalPrice>=desiredWinning) {
@@ -27,4 +31,10 @@ function solution(input) {
     console.log(`Club income - ${(totalPrice).toFixed(2)} leva.`);
 }
 
-solution(["100", "Sidecar", "7", "Mojito", "5", "White Russian", 10, "Party!"]);
+solution(["500",
+    "Bellini",
+    "6",
+    "Bamboo",
+    "7",
+    "Party!"])
+;
