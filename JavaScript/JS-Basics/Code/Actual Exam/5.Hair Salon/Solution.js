@@ -4,11 +4,7 @@ function solution(input) {
     let index=1;
     let dailyTarget = Number(data);
 
-    while (true){
-        if (data === "closed"){
-            break;
-        }
-        data = input[index++];
+    while (data !== "closed"){
         switch (data) {
             case "haircut":
                 let haircut = input[index++];
@@ -39,6 +35,7 @@ function solution(input) {
         if (totalProfit >= dailyTarget) {
             break;
         }
+        data = input[index++];
     }
     let diff = Math.abs(totalProfit-dailyTarget);
 
@@ -51,9 +48,12 @@ function solution(input) {
     console.log(`Earned money: ${totalProfit}lv.`)
 }
 
-solution(["50",
-    "color",
-    "full color",
+solution(["300",
     "haircut",
-    "ladies"])
+    "ladies",
+    "haircut",
+    "kids",
+    "color",
+    "touch up",
+    "closed"])
 ;
