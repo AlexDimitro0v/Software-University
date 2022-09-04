@@ -1,0 +1,15 @@
+# Vim
+[._]*.sw[a-p]
+
+# Python
+__pycache__/
+
+# Bot
+/config.py
+/data.db
+/data.db-journal
+/bot.log
+
+# git-archive(1)
+/*.zip
+/*.tar.gz

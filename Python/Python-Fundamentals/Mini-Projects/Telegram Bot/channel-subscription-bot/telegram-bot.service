@@ -1,0 +1,17 @@
+[Unit]
+# https://www.freedesktop.org/software/systemd/man/systemd.unit.html
+Description=Telegram Bot for Managing Paid Channel Membership
+After=network-online.target
+Requires=network-online.target
+
+[Service]
+# https://www.freedesktop.org/software/systemd/man/systemd.exec.html
+Type=idle
+# https://docs.python.org/3/using/cmdline.html#envvar-PYTHONUNBUFFERED
+Environment=PYTHONUNBUFFERED=1
+WorkingDirectory=/root/channel-subscription-bot/
+ExecStart=/usr/bin/python3 -m bot
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
